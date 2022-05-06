@@ -1,0 +1,30 @@
+//EJERCICIO 1
+//JON MENDOZA R1091 INFORMATICA1
+
+/*
+ * Desarrollar un programa que permita calcular el valor de la función F(x)=3X+2
+ * para el valor de X ingresado y muestre su resultado por pantalla.
+ * F(x)=3X+2
+*/
+ 
+ #include <stdio.h>
+
+main() {
+
+int x;
+int multiplicacion;
+int funcion;
+
+
+printf("INGRESE EL VALOR DE X PARA LA FUNCION F(x)=3X+2:\n");
+scanf("%d", &x);
+	
+multiplicacion=3*x;
+funcion=multiplicacion+2;
+
+printf("EL RESULTADO DE LA FUNCION ES: %i",funcion);
+
+	
+return 0;
+
+}
