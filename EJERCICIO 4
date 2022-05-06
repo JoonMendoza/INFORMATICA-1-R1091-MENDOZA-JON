@@ -1,0 +1,55 @@
+//EJERCICIO 4
+//JON MENDOZA R1091 INFORMATICA 1
+
+/* 
+ * Desarrollar programa que permita calcular el promedio de 3 notas. 
+ * Luego debe obtener la situación final que refleja el promedio, ya sea 
+ * aprobado o reprobado. Considere validar que las notas estén entre 1 y 7. 
+ * Al terminar imprima la situación junto con el promedio.
+*/
+
+ 
+ #include <stdio.h>
+
+main() {
+	
+int nota1;
+int nota2;
+int nota3;
+float suma;
+float promedio;
+
+printf("INGRESE SU PRIMERA NOTA:\n");
+scanf("%d", &nota1);
+
+printf("INGRESE SU SEGUNDA NOTA:\n");
+scanf("%d", &nota2);
+
+printf("INGRESE SU TERCERA NOTA:\n");	
+scanf("%d", &nota3);
+
+if(nota1>=1 && nota1<=7 && nota2>=1 && nota1<=7 && nota3>=1 && nota3<=7)
+{
+	suma=nota1+nota2+nota3;
+	promedio=suma/3;
+	}
+	
+	
+else{
+	printf("NOTAS NO VALIDAS");
+}
+
+if(promedio>=6)
+{
+	printf("SU PROMEDIO ES:\n %f", promedio);
+	printf("ESTA APROBADO");
+	
+	}
+	
+else{
+	printf("SU PROMEDIO ES: %f", promedio);
+	printf("\nESTA DESAPROBADO");
+}
+	return 0;
+
+}
