@@ -1,0 +1,42 @@
+//EJERCICIO 5
+//JON MENDOZA R1091 INFORMATICA1
+
+/*
+ * Desarrollar programa que permita pedir por pantalla una cantidad de 
+ * metros cuadrados y luego el costo del metro cuadrado. 
+ * La cantidad de metros debe estar entre 1 y 100, mientras que el 
+ * costo del metro cuadrado debe estar entre $100 y $5.000. 
+ * Imprima el total aplicando un 5% de descuento sobre el neto (cantidad * costo)
+ */
+ 
+#include <stdio.h>
+
+main() {
+	
+float metros;
+float valor;
+float neto;
+float total;
+float descuento;
+
+printf("INGRESE VALOR DE METROS:\n");
+scanf("%f", &metros);
+
+printf("INGRESE EL PRECIO:\n");
+scanf("%f",&valor);
+
+if (metros>=1 && metros<=100 && valor>=100 && metros<=5000 ) {
+neto=metros*valor;
+descuento= neto * 0.05;
+total=neto-descuento;
+printf("EL VALOR TOTAL ES:%f", total);
+	
+	}
+
+else {
+	printf("VALOR INVALIDO");
+	}
+	
+	return 0;
+
+}  
