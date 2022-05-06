@@ -1,0 +1,35 @@
+//EJERCICIO 2
+//JON MENDOZA R1091 INFORMATICA 1
+
+
+/* Diseñe un algoritmo para mostrar el mensaje APROBADO si la nota final 
+ * de un estudiante es mayor o igual que 6, y el mensaje DESAPROBADO 
+ * en caso contrario.
+ */
+
+#include <stdio.h>
+
+main() {
+
+int nota;
+
+
+
+printf("INGRESE NOTA:\n");
+scanf("%d", &nota);
+
+if(nota >=0 && nota <= 5 ){
+
+  printf("DESAPROBADO con:%i",nota);
+
+}
+
+else{
+
+  printf("APROBADO con:%i",nota);
+
+}
+
+return 0;
+
+}
