@@ -1,0 +1,41 @@
+//EJERCICIO 3
+//JON MENDOZA R1091 INFORMATICA 1
+
+/* 
+ * Desarrollar programa que permita calcular el área de un triángulo. 
+ * Recuerde que la fórmula a utilizar es: area= (base*altura)/2), 
+ * además valide que la base y la altura sean mayores a cero. 
+ * Al terminar imprima el resultado obtenido.
+ */
+ 
+ #include <stdio.h>
+
+main() {
+	
+float base;
+float altura;
+float resultado1;
+float resultado2;
+
+printf("INGRESE LA MEDIDA DE LA BASE:\n");
+scanf("%f",&base);
+
+
+printf("INGRESE LA MEDIDA DE LA ALTURA:\n");
+scanf("%f",&altura);
+
+if(altura>0 && base>0) {
+	
+resultado1=base*altura;
+resultado2=resultado1/2;
+printf("EL AREA ES: %f",resultado2);
+
+}
+
+else{
+	printf("VALOR INVALIDO");
+	}
+	
+return 0;
+
+}
