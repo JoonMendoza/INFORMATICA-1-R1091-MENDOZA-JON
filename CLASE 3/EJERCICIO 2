@@ -1,0 +1,45 @@
+//EJERCICIO 2
+
+/*realize un programa que genere 100 valores aleatorios entre 10 y 20, se debera informar
+al usuario el promedio, los valores maximos, minimo y el mas repetido*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+
+//generar 100 valores entre 10 y 20
+int max=100;
+int i;
+int num[100];
+int maximo = 20;
+int minimo = 10;
+int suma = 0;
+int promedio;
+
+for( i = 0 ; i < max ; i++ ){
+	num[i] = rand()  % (maximo + 1 - minimo) + minimo;
+//formula rand() % (maximo + 1 - minimo) + minimo
+	suma+= num[i];
+}
+printf("a%d",num[1]);
+//calcular promedio
+promedio = suma / max;
+printf(" PROMEDIO: %d", promedio);
+//maximos y minimos
+max=numbers[0];
+min=numbers[0];
+
+for(int i=0; i<max ; i++ )
+    if(max < numbers[i]){
+        max=numbers[i];
+        }
+    if(min > numbers[i]){
+            min=numbers[i];
+        }
+    }
+//el mas repetido
+
+	
+	return 0;
+}
