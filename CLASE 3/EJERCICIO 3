@@ -1,0 +1,39 @@
+//EJERCICIO 3
+//JON MENDOZA R1091 INFORMATICA 1
+/*realize un programa que genere un conjunto de 1000 numeros aleatorios entre 0 a 100 
+se debera informar al usuario el orden de aparicion de los siguientes numeros
+de interes 0,1,10 y 100, primera vez que aparezca cada uno */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+//generar conjunto de 1000 numeros entre 0 a 100
+   	int i;
+   	int j;
+   	int k;
+   	int a;
+   	int l;
+   	int max = 1000;
+   	int num[1000];
+   	int cero = 2;
+   	int almacenarcero;
+   	int uno = 2;
+   	int almacenaruno;
+   	int diez = 2;
+   	int almacenardiez;
+   	int cien = 1000;
+   	int almacenarcien;
+
+for( i = 0 ; i < max ; i++ ) {
+	   num[i] == rand() % 100;
+   }
+   
+for ( j = 0 ; j < max ; j++ ) {
+	if ( cero == num[j] ){
+		printf("\nPRIMER CERO EN: %d", j);
+		j = max+1;
+		}
+} 
+return 0;
+}
