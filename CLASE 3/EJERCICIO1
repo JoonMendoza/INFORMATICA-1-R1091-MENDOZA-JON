@@ -1,0 +1,38 @@
+//EJERCICIO 1
+//JON MENDOZA R1091 INFORMATICA 1
+
+/*realize un programa que genere 100 valores aleatorios entre 0 y 100
+los guarde en un array, solicite al usuario un numero y cuente cuantas veces aparece
+dicho numero*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main () {
+//generar 100 valores aleatorios
+	int numero;
+	int contador=0;
+   	int i;
+   	int max = 100;
+   	time_t t;
+   	srand((unsigned) time(&t));
+   	int num[100];
+
+for( i = 0 ; i < max ; i++ ) {
+	   num[i] = rand() % 100;
+   }
+   
+//solicitar numero
+printf("\nINGRESE NUMERO: ");
+scanf("%d",&numero);
+
+//calcular veces que se repite
+for (i = 0; i < max ; i++){
+	if (numero == num[i]){
+		contador++;
+		}
+	}
+//mostrar
+printf("EL NUMERO: %d,  SE REPITE: %d ", numero , contador);
+return 0;
+}
